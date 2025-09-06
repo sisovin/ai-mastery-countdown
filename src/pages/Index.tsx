@@ -1,13 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet";
+import ChallengeHero from "@/components/ChallengeHero";
+import ChallengeGrid from "@/components/ChallengeGrid";
+import ChallengeRules from "@/components/ChallengeRules";
+import ProgressTracker from "@/components/ProgressTracker";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>28-Day AI Mastery Challenge - Transform Your Skills</title>
+        <meta name="description" content="Join the 28-day AI mastery challenge designed for 40+ professionals. Master AI tools like ChatGPT, Canva, Copy.ai and more with daily focused learning." />
+      </Helmet>
+      
+      <div className="min-h-screen gradient-bg">
+        <main className="container mx-auto px-4 py-8">
+          <ChallengeHero />
+          <ProgressTracker />
+          <ChallengeGrid />
+          <ChallengeRules />
+        </main>
       </div>
-    </div>
+    </>
   );
 };
 

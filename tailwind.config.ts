@@ -47,6 +47,21 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // AI Challenge Colors
+        challenge: {
+          bg: "hsl(var(--challenge-bg))",
+          surface: "hsl(var(--challenge-surface))",
+        },
+        ai: {
+          purple: "hsl(var(--ai-purple))",
+          blue: "hsl(var(--ai-blue))",
+          teal: "hsl(var(--ai-teal))",
+          orange: "hsl(var(--ai-orange))",
+          pink: "hsl(var(--ai-pink))",
+          green: "hsl(var(--ai-green))",
+          indigo: "hsl(var(--ai-indigo))",
+          yellow: "hsl(var(--ai-yellow))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
